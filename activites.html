@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS DAI — Portfolio Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <img src="img/logo.png" alt="Logo BTS DAI" class="nav-logo-img">
+                <span class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">BTS DAI</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="activites.html" class="active">Activités</a></li>
+                <li><a href="stagiaires.html">Liste Stagiaires</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" aria-label="Changer le mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.22" x2="5.64" y2="17.58"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="activites-section" id="activites">
+            <div class="container">
+                <h1 class="activites-title">Portfolio Design Numérique & Activités</h1>
+                <p class="activites-intro">
+                    Découvrez nos projets multimédias ainsi que mes trois créations graphiques réalisées dans le cadre de la filière
+                    <strong>BTS DAI</strong> — identité visuelle, communication et supports imprimables au service de notre image de marque à Larache.
+                </p>
+
+                <div class="activities-grid portfolio-grid">
+
+                    <!-- 1. Tech Podcast (Audio) -->
+                    <article class="portfolio-card media-card-type" data-type="audio">
+                        <div class="portfolio-card-preview">
+                            <div class="custom-media-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); color: var(--accent-color);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                    <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 19v3M8 22h8"/>
+                                </svg>
+                            </div>
+                            <span class="portfolio-card-overlay">Écouter le Podcast</span>
+                        </div>
+                        <h2 class="feature-card-title">Tech Podcast</h2>
+                        <p class="feature-card-desc">
+                            Des sessions audio animées par les stagiaires pour décrypter l'actualité tech et partager des retours d'expérience.
+                        </p>
+                    </article>
+
+                    <!-- 2. Atelier Multimédia (Vidéo) -->
+                    <article class="portfolio-card media-card-type" data-type="video">
+                        <div class="portfolio-card-preview">
+                            <div class="custom-media-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); color: var(--accent-color);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <span class="portfolio-card-overlay">Voir la Vidéo</span>
+                        </div>
+                        <h2 class="feature-card-title">Atelier Multimédia</h2>
+                        <p class="feature-card-desc">
+                            Ateliers créatifs autour de la production de contenus numériques : montage, identité visuelle et storytelling.
+                        </p>
+                    </article>
+
+                    <!-- 3. Carte de Visite -->
+                    <article class="portfolio-card"
+                             tabindex="0"
+                             role="button"
+                             data-image="img/carte-visite.png"
+                             data-title="Carte de Visite"
+                             aria-label="Voir la Carte de Visite">
+                        <div class="portfolio-card-preview">
+                            <img src="img/carte-visite.png" alt="Aperçu — Carte de Visite">
+                            <span class="portfolio-card-overlay">Voir la Carte</span>
+                        </div>
+                        <h2 class="feature-card-title">Carte de Visite</h2>
+                        <p class="feature-card-desc">
+                            Mon identity professionnelle en tant que futur développeur, conçue avec un design épuré et moderne.
+                        </p>
+                    </article>
+
+                    <!-- 4. Flyer Promotionnel -->
+                    <article class="portfolio-card"
+                             tabindex="0"
+                             role="button"
+                             data-image="img/my-flyer.jpg"
+                             data-title="Flyer Promotionnel"
+                             aria-label="Voir le Flyer Promotionnel">
+                        <div class="portfolio-card-preview">
+                            <img src="img/my-flyer.jpg" alt="Aperçu — Flyer Promotionnel">
+                            <span class="portfolio-card-overlay">Voir le Flyer</span>
+                        </div>
+                        <h2 class="feature-card-title">Flyer Promotionnel</h2>
+                        <p class="feature-card-desc">
+                            Un dépliant publicitaire et informatif conçu pour l'orientation et la promotion de la filière BTS DAI à Larache.
+                        </p>
+                    </article>
+
+                    <!-- 5. Mon Badge Personnel -->
+                    <article class="portfolio-card"
+                             tabindex="0"
+                             role="button"
+                             data-image="img/my-badge.png"
+                             data-title="Mon Badge Personnel"
+                             aria-label="Voir Mon Badge Personnel">
+                        <div class="portfolio-card-preview">
+                            <img src="img/my-badge.png" alt="Aperçu — Mon Badge Personnel">
+                            <span class="portfolio-card-overlay">Voir le Badge</span>
+                        </div>
+                        <h2 class="feature-card-title">Mon Badge Personnel</h2>
+                        <p class="feature-card-desc">
+                            Design de badge personnalisé représentant mon profil d'étudiant mée aux couleurs de notre charte.
+                        </p>
+                    </article>
+
+                    <article class="portfolio-card"
+                             tabindex="0"
+                             role="button"
+                             data-image="img/mon-cv-photo.png"
+                             data-title="Mon Curriculum Vitae (CV)"
+                             aria-label="Voir Mon CV">
+                        <div class="portfolio-card-preview">
+                            <img src="img/mon-cv-photo.png" alt="Aperçu — Mon Curriculum Vitae (CV)">
+                            <span class="portfolio-card-overlay">Voir le CV</span>
+                        </div>
+                        <h2 class="feature-card-title">Mon Curriculum Vitae (CV)</h2>
+                        <p class="feature-card-desc">
+                           Consultez mon profil professionnel complet, mettant en valeur mes compétences en développement d'applications informatiques (C#, SQL, Web), mes projets académiques et mon parcours au sein du BTS DAI.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #0f172a; color: #94a3b8; padding: 3rem 0 1.5rem 0; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); font-family: sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+        
+        <!-- القسم 1: معلومات عليك -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="color: #ffffff; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600;">Mohamed Rjam</h3>
+            <p style="line-height: 1.6; margin-bottom: 0.5rem;">Étudiant en BTS Développement d'Applications Informatiques (DAI).</p>
+            <p style="color: var(--accent-color, #0284c7); font-weight: 500;">Larache / Tanger, Maroc</p>
+        </div>
+
+        <!-- القسم 2: روابط سريعة -->
+        <div style="flex: 1; min-width: 200px;">
+            <h3 style="color: #ffffff; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600;">Liens Rapides</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <li><a href="index.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Accueil</a></li>
+                <li><a href="formation.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Formation</a></li>
+                <li><a href="planning.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Planning</a></li>
+                <li><a href="projet.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Projets</a></li>
+                <li><a href="activites.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Activités</a></li>
+                <li><a href="contact.html" style="color: #94a3b8; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#94a3b8'">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- القسم 3: معلومات الاتصال والشبكات الاجتماعية -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="color: #ffffff; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600;">Contact Direct</h3>
+            <p style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--accent-color, #0284c7);">✉</span> mmed31447@gmail.com
+            </p>
+            <p style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--accent-color, #0284c7);">📞</span> +212 679-385981
+            </p>
+            
+            <!-- أزرار الحسابات المهنية الجديدة -->
+            <div style="display: flex; gap: 12px; margin-top: 0.5rem;">
+                <!-- GitHub -->
+                <a href="https://github.com/mohamedrjam" target="_blank" title="GitHub" style="color: #94a3b8; text-decoration: none; background: rgba(255,255,255,0.03); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.background='#24292e'; this.style.borderColor='#ffffff';" onmouseout="this.style.color='#94a3b8'; this.style.background='rgba(255,255,255,0.03)'; this.style.borderColor='rgba(255,255,255,0.08)';">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/med-rj-6133653b1" target="_blank" title="LinkedIn" style="color: #94a3b8; text-decoration: none; background: rgba(255,255,255,0.03); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.background='#0077b5'; this.style.borderColor='#ffffff';" onmouseout="this.style.color='#94a3b8'; this.style.background='rgba(255,255,255,0.03)'; this.style.borderColor='rgba(255,255,255,0.08)';">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <!-- X / Twitter -->
+                <a href="https://x.com/rj_med3" target="_blank" title="Twitter / X" style="color: #94a3b8; text-decoration: none; background: rgba(255,255,255,0.03); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.background='#000000'; this.style.borderColor='#ffffff';" onmouseout="this.style.color='#94a3b8'; this.style.background='rgba(255,255,255,0.03)'; this.style.borderColor='rgba(255,255,255,0.08)';">
+                    <!-- أيقونة X العصرية -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16zM4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- سطر الحقوق السفلي -->
+    <div style="max-width: 1200px; margin: 2rem auto 0 auto; padding: 1.5rem 1.5rem 0 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.8rem; color: #64748b;">
+        <p>&copy; 2026 Mohamed Rjam. Tous droits réservés. Conçu pour le Projet de Fin d'Année - BTS DAI.</p>
+    </div>
+</footer>
+
+    <!-- Lightbox Modal (Portfolio) -->
+    <div class="modal-overlay" id="mediaModal" aria-hidden="true">
+        <div class="modal-content modal-content-lightbox" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-panel modal-panel-image" id="modalPanelBody">
+                <img id="modalLightboxImage" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+   <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+    }
+
+    /* ── Lightbox Portfolio ── */
+    const mediaModal = document.getElementById('mediaModal');
+    const modalClose = document.getElementById('modalClose');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalPanelBody = document.getElementById('modalPanelBody');
+    const portfolioCards = document.querySelectorAll('.portfolio-card:not(.media-card-type)');
+    const mediaCards = document.querySelectorAll('.media-card-type');
+
+    function openLightbox(imageSrc, title) {
+        // تعديل: زدنا الـ ستايل للتصويرة باش تفرض الحجم ديالها وتبان بوضوح وسط الـ Modal
+        modalPanelBody.innerHTML = `<img id="modalLightboxImage" src="${imageSrc}" alt="${title}" style="width: 100%; max-height: 70vh; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: block; margin: 0 auto;">`;
+        modalTitle.textContent = title;
+        mediaModal.classList.add('open');
+        mediaModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+        mediaModal.classList.remove('open');
+        mediaModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+        modalPanelBody.innerHTML = ''; // تنظيف المحتوى عند الإغلاق
+    }
+
+    portfolioCards.forEach((card) => {
+        card.addEventListener('click', () => {
+            openLightbox(card.dataset.image, card.dataset.title);
+        });
+
+        card.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openLightbox(card.dataset.image, card.dataset.title);
+            }
+        });
+    });
+
+    mediaCards.forEach((card) => {
+        card.addEventListener('click', () => {
+            const type = card.dataset.type;
+            if(type === 'audio') {
+                modalTitle.textContent = "Tech Podcast - Épisode 01";
+                modalPanelBody.innerHTML = `<audio controls autoplay style="width:100%; margin-top:2rem;"><source src="tracks/podcast-ep1.mp3" type="audio/mpeg"></audio>`;
+            } else if(type === 'video') {
+                modalTitle.textContent = "Atelier Multimédia - Présentation";
+                modalPanelBody.innerHTML = `<video controls autoplay style="width:100%; max-height:60vh; border-radius:4px;"><source src="video/Untitled design.mp4" type="video/mp4"></video>`;
+            }
+            mediaModal.classList.add('open');
+            mediaModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        });
+    });
+
+    if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+    }
+
+    mediaModal.addEventListener('click', (event) => {
+        if (event.target === mediaModal) {
+            closeModal();
+        }
+    });
+
+    /* ── كود الـ Theme Toggle المشترك ── */
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
